@@ -1,0 +1,12 @@
+<ion-content>
+
+    <ion-item>
+        <ion-label>Type your message</ion-label>
+        <ion-input [(ngModel)]="newMessage"></ion-input>
+    </ion-item>
+
+    <ion-button (click)="sendMessage()">Send</ion-button>
+
+    <div *ngFor="let m of messages">{{ m }}</div>
+
+</ion-content>
